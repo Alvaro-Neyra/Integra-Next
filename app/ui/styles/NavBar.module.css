@@ -1,0 +1,348 @@
+.navbar {
+    padding: 1.1vw;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    font-size: 1.2vw;
+    position: fixed;
+    z-index: 20;
+}
+
+.linkDiv {
+    display: flex;
+    gap: 1.5vw;
+}
+
+.linkDivUl {
+    display: flex;
+    list-style-type: none;
+    align-items: center ;
+    justify-content: space-between;
+    height: 100%;
+    gap: 2vw;
+}
+
+.navBarUl {
+    display: flex;
+    list-style-type: none;
+    gap: 1.5vw;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.navBarLi {
+    transition: 400ms ease-in;
+}
+
+.navBarLink {
+    text-decoration: none;
+    color: white;
+    transform: scale(1);
+    transition: all 400ms ease-in;
+    font-size: 1.3vw;
+}
+
+.navBarLink:hover {
+    color: var(--mainColorLight);
+}
+
+.navBarLi:hover {
+    transform: scale(1.1);
+}
+
+
+.integra-img {
+    width: 20vw;
+}
+
+.integra-img-responsive{
+    display: none;
+}
+
+.active {
+    background-color: white;
+}
+
+.active .navBarLink {
+    transition: 400ms ease-in;
+    color: var(--mainColor);
+}
+
+.active .navBarLink:hover {
+    color: var(--mainColor);
+}
+
+.active .contact-btn {
+    color: var(--textColor);
+    background-color: var(--mainColorLight);
+    transition: 400ms ease-in;
+}
+
+.active .contact-btn:hover {
+    color: var(--mainColor);
+    background-color: var(--textColor);
+}
+
+.contact-btn {
+    text-decoration: none;
+    background-color: var(--textColor);
+    outline: none;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    transition: 400ms ease-in;
+    font-size: 1.4vw;
+    color: var(--clr-neutral-900);
+}
+
+.contact-btn:hover {
+    background-color: var(--mainColorLight);
+    color: var(--textColor);
+    cursor: pointer;
+}
+
+.nav-btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 7vw;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .navbar .navBarLink {
+        font-size: 1.7vw;
+    }
+
+    .navbar .contact-btn {
+        font-size: 1.7vw;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav-btn {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        justify-content: center;
+        align-items: center;
+        color: var(--textColor);
+    }
+    .active .nav-btn {
+        color: var(--mainColor);
+    }
+    .navbar {
+        display: flex;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: -151vh;
+        left: 0;
+        height: 110%;
+        width: 100%;
+        gap: 1.5rem;
+        transition: 1s;
+        background-color: var(--mainColor);
+        z-index: 10;
+    }
+    .integra-img {
+        width: 50vw;
+    }
+    .active .navLinks {
+        background-color: white;
+    }
+    .integra-img-responsive {
+        display: block;
+        width: 80vw;
+    }
+    .navBarUl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .linkDiv {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .linkDivUl {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .expanded {
+        transform: translateY(151vh);
+    }
+    .nav-close-btn {
+        position: absolute;
+        top: 6vw;
+        right: 11vw;
+    }
+    .barsIcon{
+        fill: var(--textColor);
+        font-size: max-content;
+    }
+    .closeIcon{
+        fill: var(--textColor);
+        font-size: max-content;
+    }
+    .active .closeIcon {
+        fill: var(--mainColor);
+    }
+    .active .barsIcon {
+        fill: var(--mainColor);
+    }
+    .navbar .navBarLink {
+        font-size: 4.5vw;
+    }
+    .navbar .contact-btn {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .integra-img {
+        width: 60vw;
+    }
+    .integra-img-responsive {
+        width: 80vw;
+    }
+    .navbar .navBarLink {
+        font-size: 4vw;
+    }
+    .navbar .contact-btn {
+        font-size: 4vw;
+    }
+    .linkDivUl {
+        gap: 5vw;
+    }
+    .nav-close-btn {
+        top: 8vw;
+        right: 8vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .integra-img {
+        width: 60vw;
+    }
+    .integra-img-responsive {
+        width: 90vw;
+    }
+    .navbar .navBarLink {
+        font-size: 7vw;
+    }
+    .navbar .contact-btn {
+        font-size: 7vw;
+    }
+    .linkDivUl {
+        gap: 8vw;
+    }
+    .nav-close-btn {
+        top: 10vw;
+        right: 5vw;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .navbar .integra-img {
+        width: 90vw;
+    }
+    .navbar .navBarLink {
+        font-size: 7vw;
+    }
+    .navbar .contact-btn {
+        font-size: 7vw;
+    }
+    .linkDivUl {
+        gap: 8vw;
+    }
+    .contact-btn {
+        padding: 0rem .5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .navbar {
+        padding: 0.5rem;
+    }
+    .integra-img-responsive {
+        width: 70vw;
+    }
+    .navBarUl {
+        flex-direction: row;
+        gap: .2vw;
+        flex-wrap: wrap;
+    }
+    .navbar .navBarLink {
+        font-size: 2.5vw;
+    }
+    .navbar .contact-btn {
+        font-size: 2.5vw;
+    }
+    .navbar .integra-img {
+        width: 40vw;
+    }
+    .navbar .nav-btn {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+    .integra-img {
+        width: 35vw;
+    }
+    .navbar .navBarLink {
+        font-size: 2.8vw;
+    }
+    .navbar .contact-btn {
+        font-size: 2.8vw;
+    }
+    .navbar .navBarLi {
+        gap: 0.6vw;
+    }
+    .navbar .nav-close-btn {
+        font-size: 1.2vw;
+    }
+    .navbar .nav-btn {
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width: 500px) and (orientation: landscape) {
+    .navbar .navbarLink {
+        font-size: 4vw;
+    }
+    .navbar .contact-btn {
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .navbar .contact-btn {
+        border-radius: 1vw;
+    }
+}

@@ -1,42 +1,188 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*::selection {
+  background-color: var(--mainColorLight);
+  color: white;
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  max-width: 100vw;
   overflow-x: hidden;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
+#root {
   margin: 0;
+  padding: 0;
+  min-width: 100vw;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+  --mainColor: #45495a;
+  --mainColorLight: #5767aa;
+  --mainColorLightHover: #6f7fc7;
+  --textColor: #eee;
+  --darkSeaColor: #012E40;
+  --seaColor: #024959;
+  --lightSeaColor: #026773;
+  --skyLightColor: #3CA6A6;
+  --sandColor: #F2E3D5;
+  --darkBlueColor: #26266F;
+  --redColor: tomato;
+  --clr-neutral-900: hsl(207, 19%, 9%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-85: hsl(0, 0%, 85%);
+  --clr-primary-100: hsl(205, 15%, 58%);
+  --clr-primary-400: hsl(215, 25%, 27%);
+  --clr-primary-800: hsl(217, 33%, 17%);
+  --clr-primary-900: hsl(218, 33%, 9%);
+  --gap-scroller-inner: 5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: var(--mainColorLight);
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mainColorLightHover);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--mainColor);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.heading-2 {
+  font-size: 3.5vw;
+  text-align: center;
+  color: var(--mainColor);
+  margin-bottom: 2rem;
+}
+
+svg {
+  fill: #000000;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.absolute-container {
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  z-index: 9;
+}
+
+.gototop-btn {
+  background-color: var(--mainColorLight);
+  border: none;
+  padding: 0.5vw 1vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+  font-size: 2vw;
+}
+
+.gototop-btn svg {
+  fill: var(--clr-neutral-100);
+  transition: all 500ms ease-in-out;
+}
+
+.whatsapp-icon {
+  background-color: var(--mainColorLight);
+  border: none;
+  padding: 0.5vw 1vw;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+  font-size: 2vw;
+  width: 5vw;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-icon svg {
+  fill: var(--clr-neutral-100);
+  transition: all 500ms ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+@media (hover) {
+  .gototop-btn:hover {
+    background-color: var(--clr-neutral-100);
+  }
+  
+  .gototop-btn:hover svg{
+    fill: var(--clr-neutral-900);
+  }
+
+  .whatsapp-icon:hover, .whatsapp-icon:active {
+    background-color: var(--clr-neutral-100);
+  }
+  
+  .whatsapp-icon:hover svg, .whatsapp-icon:active svg {
+    fill: var(--clr-neutral-900);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .heading-2 {
+    font-size: 3rem;
+  }
+  .gototop-btn {
+    font-size: 3vw;
+    padding: 1vw 1.5vw;
+  }
+  .whatsapp-icon {
+    width: 7vw;
+    height: 7vw;
+    font-size: 3vw;
+    padding: 1vw 1.5vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading-2 {
+    font-size: 2.5rem;
+  }
+  .gototop-btn {
+    font-size: 5vw;
+    padding: 1.5vw 2vw;
+  }
+  .whatsapp-icon {
+    width: 12vw;
+    height: 12vw;
+    font-size: 5vw;
+    padding: 2vw 2.2vw;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  :root {
+    --gap-scroller-inner: 15vw;
   }
 }
