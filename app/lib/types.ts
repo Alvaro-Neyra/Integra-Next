@@ -20,3 +20,25 @@ export interface ButtonProps {
     className?: string;
     onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 }
+
+export default interface RootLayoutProps {
+    active: boolean;
+    position: string;
+    children: React.ReactNode;
+}
+
+interface ImageUrls {
+    xsmall: string;
+    small: string;
+    medium: string;
+    large: string;
+    xlarge: string;
+    xxlarge: string;
+    original: string;
+}
+
+export interface Announcement {
+    title: string;
+    text: string;
+    img: string;
+}

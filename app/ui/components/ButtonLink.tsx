@@ -16,7 +16,9 @@ interface StyledLinkProps {
     colorActiveHover: string;
 }
 
-const StyledLink = styled.a<StyledLinkProps>`
+const StyledLink = styled.span.withConfig({ 
+        shouldForwardProp: (prop) => !["active", "fontSize", "width", "backgroundColor", "backgroundHover", "colorHover", "colorText", "colorActive", "backgroundActive", "backgroundActiveHover", "colorActiveHover"].includes(prop)
+    })<StyledLinkProps>`
     font-size: ${props => props.fontSize};
     font-weight: ${props => props.active ? 'bold' : 'normal'};
     text-decoration: none;

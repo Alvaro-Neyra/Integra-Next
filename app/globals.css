@@ -69,15 +69,15 @@ img {
   height: auto;
 }
 
+svg {
+  fill: inherit;
+}
+
 .heading-2 {
   font-size: 3.5vw;
   text-align: center;
   color: var(--mainColor);
   margin-bottom: 2rem;
-}
-
-svg {
-  fill: #000000;
 }
 
 .no-scroll {

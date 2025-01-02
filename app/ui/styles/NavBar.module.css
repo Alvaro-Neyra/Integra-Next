@@ -53,6 +53,9 @@
     transform: scale(1.1);
 }
 
+.navLinkActive {
+    font-weight: bold;
+}
 
 .integra-img {
     width: 20vw;
@@ -112,6 +115,63 @@
     font-size: 7vw;
 }
 
+.liServicesContainer {
+    position: relative;
+}
+
+.serviciosPopup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    visibility: hidden;
+    width: 14vw;
+    opacity: 0;
+    position: absolute;
+    padding: 1vw;
+    top: 3.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 20;
+    transition: all 600ms ease-in;
+    background-color: rgba(0, 0, 0, 0.6);
+    gap: .5vw;
+    border-top: .5vw solid var(--mainColorLight);
+}
+
+.active .serviciosPopup {
+    background-color: white;
+}
+
+.serviciosPopup .navBarLink {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1vw;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.active .serviciosPopup .navBarLink {
+    color: var(--mainColor);
+}
+
+.active .serviciosPopup .navBarLink:hover {
+    color: var(--mainColorLight);
+}
+
+.serviciosPopup .navBarLink:hover {
+    color: var(--clr-neutral-85);
+}
+
+.serviciosPopupActive {
+    visibility: visible;
+    opacity: 1;
+    z-index: 10;
+}
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -123,7 +183,6 @@
     border: 0;
 }
 
-
 @media only screen and (max-width: 1200px) {
     .navbar .navBarLink {
         font-size: 1.7vw;
@@ -131,6 +190,14 @@
 
     .navbar .contact-btn {
         font-size: 1.7vw;
+    }
+
+    .serviciosPopup {
+        width: 17vw;
+    }
+
+    .serviciosPopup .navBarLi {
+        font-size: 1.4vw;
     }
 }
 
@@ -221,6 +288,13 @@
     .navbar .contact-btn {
         font-size: 4.5vw;
     }
+    .navBarDesktop {
+        display: none;
+    }
+    .serviciosPopupActive {
+        visibility: hidden;
+        opacity: 0;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -281,7 +355,7 @@
         gap: 8vw;
     }
     .contact-btn {
-        padding: 0rem .5rem;
+        padding: .5rem .5rem;
     }
 }
 
@@ -338,11 +412,5 @@
     }
     .navbar .contact-btn {
         font-size: 4vw;
-    }
-}
-
-@media only screen and (max-width: 1400px) {
-    .navbar .contact-btn {
-        border-radius: 1vw;
     }
 }
