@@ -1,0 +1,79 @@
+.divTextCard {
+    padding: 2rem;
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.divTextCard h2 {
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+.divTextCard p {
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.values-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.values-container img {
+    position: absolute;
+}
+.values-container .pink-arrow {
+    width: 15vw;
+    top: -5vw;
+    left: 10vw;
+}
+.values-container .yellow-star{
+    bottom: -5vw;
+    right: 5vw;
+    rotate: -20deg;
+    width: 12vw;
+}
+.values {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem;
+}
+.values-container p {
+    font-size: 2vw;
+}
+
+@media(hover) {
+    .divTextCard:hover {
+        box-shadow: 8px 8px 0 5px var(--darkBlueColor);
+        transform: translate(-5px, -5px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .values {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .values-container {
+        text-align: center;
+    }
+    .values-container p {
+        font-size: 3vw;
+    }
+    .divTextCard {
+        padding: 1rem;
+    }
+    .divTextCard h2 {
+        font-size: 3vw;
+    }
+    .divTextCard p {
+        font-size: 3vw;
+    }  
+}

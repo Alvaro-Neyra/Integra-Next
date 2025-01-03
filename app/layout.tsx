@@ -2,6 +2,7 @@ import { titiliumWeb } from "./ui/fonts/fonts";
 import "./globals.css";
 import NavBar from "./ui/components/NavBar";
 import { headers } from "next/headers";
+import Footer from "./ui/components/Footer";
 
 
 export default async function RootLayout({
@@ -24,6 +25,7 @@ export default async function RootLayout({
       <body className={`${titiliumWeb.className}`}>
         <NavBar active={active} position={position} />
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );

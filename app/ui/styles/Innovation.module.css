@@ -1,0 +1,104 @@
+.innovation-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    gap: 1.5vw;
+}
+.images-container {
+    display: flex;
+    width: 45vw;
+    height: 45vw;
+    position: relative;
+}
+.images-container img {
+    position: absolute;
+    border-radius: 1vw;
+}
+
+.images-container img.blue-arrow {
+    width: 25%;
+    top: -5%;
+    rotate: 100deg;
+}
+
+.images-container img.image1 {
+    width: 50%;
+    top: 10%;
+    right: 10%;
+    z-index: -1;
+}
+
+.images-container img.image2 {
+    width: 60%;
+    bottom: 10%;
+    left: 10%;
+}
+
+.images-container img.image3 {
+    width: 50%;
+    left: 6%;
+    top: 20%;
+    z-index: -2;
+}
+
+.images-container img.image4 {
+    width: 40%;
+    right: 3%;
+    bottom: 30%;
+}
+
+.innovation-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1vw;
+    width: 40vw;
+}
+.innovation-text-container h2 {
+    font-size: 260%;
+}
+
+.innovation-text-container p {
+    font-size: 160%;
+    padding: 1vw 0;
+}
+
+.innovation-btn {
+    background-color: rgb(100, 179, 244);
+    width: 25vw;
+    font-size: 180%;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5vw 1vw;
+    border-radius: 1vw;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    display: block;
+    color:white;
+}
+
+.innovation-btn:hover {
+    background-color: #6f7fc7;
+    color: hsl(0, 0%, 100%);
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .innovation-section {
+        flex-direction: column;
+        text-align: center;
+        padding: .5rem;
+    }
+    .innovation-text-container {
+        width: 90vw;
+        order: 1;
+        font-size: 2.4vw;
+        align-items: center;
+    }
+    .images-container {
+        order: 2;
+        width: 100vw;
+        height: 100vw;
+    }
+}

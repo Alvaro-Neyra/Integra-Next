@@ -1,4 +1,6 @@
-const valores = [
+import { Valores } from "../lib/types";
+
+const valores: Valores[] = [
     {
         "heading": "RESPONSABILIDAD",
         "text": "Nuestro compromiso con el cliente y sus objetivos es importante; por lo que priorizamos lograr cada uno de estos en los periodos, costos y calidad esperados."

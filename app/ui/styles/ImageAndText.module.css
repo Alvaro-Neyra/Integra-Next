@@ -1,0 +1,87 @@
+.sectionImageAndText {
+    display: flex;
+    width: 100%;
+}
+
+.pictureImageAndText {
+    width: 100%;
+    width: 50vw;
+}
+
+.imgImageAndText {
+    width: 50vw;
+    height: 100%;
+}
+
+.divImageAndText {
+    width: 50vw;
+    color: black;
+    background-color: transparent;
+    padding: 6vw;
+}
+
+.divImageAndText img {
+    width: 100%;
+    height: 100%;
+}
+
+.divImageAndText h2 {
+    font-size: 2vw;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.divImageAndText h2 span:nth-child(2) {
+    font-size: 4vw;
+    font-weight: 10000;
+}
+
+.divImageAndText p {
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding-block: 1rem;
+}
+
+.order1 {
+    order: 1;
+}
+
+.order2 {
+    order: 2;
+}
+
+@media screen and (max-width: 1024px) {
+    .sectionImageAndText {
+        flex-direction: column;
+    }
+
+    .imgImageAndText {
+        width: 100vw;
+        order: 2;
+    }
+
+    .sectionImageAndText div.divImageAndText {
+        width: 100vw;
+        order: 1;
+    }
+
+    .divImageAndText h2 {
+        font-size: 4vw;
+    }
+
+    .divImageAndText h2 span:nth-child(2) {
+        font-size: 6vw;
+    }
+
+    .divImageAndText p {
+        font-size: 3vw;
+    }
+
+    .pictureImageAndText {
+        width: 100vw;
+        order: 2;
+    }
+}

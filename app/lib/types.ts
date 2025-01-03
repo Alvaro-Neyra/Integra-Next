@@ -64,3 +64,34 @@ export interface Project {
         webp: ImageUrls;
     }
 }
+
+export interface Client {
+    id?: number;
+    descripcion: string;
+    img: string;
+}
+
+export interface InfiniteScrollerType {
+    heading: string;
+    content: Client[];
+    duration: string;
+    direction: string;
+}
+
+export interface ImageAndTextProps {
+    firstText: boolean;
+    firstHeading: string;
+    secondHeading: string;
+    text: string;
+    image: {
+        jpg: ImageUrls;
+        webp: ImageUrls;
+    }
+    backgroundColor: string;
+    textColor?: string;
+}
+
+export interface Valores {
+    heading: string;
+    text: string;
+}

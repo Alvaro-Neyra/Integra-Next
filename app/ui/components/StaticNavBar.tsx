@@ -3,7 +3,7 @@ import styles from "../styles/NavBar.module.css";
 import Logo from "./Logo";
 import Link from "next/link";
 
-export default function StaticNavBar({ active, position }: NavBarProps) {
+export default function StaticNavBar({ active, position }: Readonly<NavBarProps>) {
     return (
         <header className={`${styles.navbar} ${active ? styles.active : ''}`} style={{ position: position as React.CSSProperties['position'] }}>
             <Logo className={styles["integra-img"]} />

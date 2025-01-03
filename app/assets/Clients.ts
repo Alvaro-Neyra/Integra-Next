@@ -1,4 +1,6 @@
-const clientesArreglo = [
+import { Client } from "../lib/types";
+
+const clientesArreglo: Client[] = [
     {
         descripcion: "CAT LOGO",
         img: "svg/catLogo.svg"

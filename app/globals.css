@@ -198,3 +198,10 @@ body .heading-2 {
       transition-delay: 0ms !important;
   }
 }
+
+
+@keyframes scroll {
+  to {
+      transform: translate(calc(-50% - calc(var(--gap-scroller-inner) / 2)));
+  }
+}

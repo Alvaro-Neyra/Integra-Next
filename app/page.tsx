@@ -3,6 +3,7 @@ import Carrusel from "./ui/components/Carrusel";
 import Data from "./ui/components/Data";
 import Services from "@/app/assets/Servicios";
 import Projects from "./ui/components/Projects";
+import InfiniteScroller from "./ui/components/InfiniteScroller";
 
 export default async function Page() {
   return (
@@ -11,6 +12,7 @@ export default async function Page() {
         <Carrusel images={Announces}></Carrusel>
         <Data services={Services}></Data>
         <Projects></Projects>
+        <InfiniteScroller></InfiniteScroller>
       </main>
     </div>
   );
