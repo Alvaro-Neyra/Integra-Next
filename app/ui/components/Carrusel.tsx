@@ -3,7 +3,7 @@ import StaticCarrusel from "./StaticCarrusel";
 import { Suspense } from "react";
 import DynamicCarrusel from "./DynamicCarrusel";
 
-export default function Carrusel({images}: {images: Announcement[]}) {
+export default function Carrusel({images}: {readonly images: Announcement[]}) {
     return (
         <Suspense fallback={<StaticCarrusel images={images}/>}>
             <DynamicCarrusel images={images}/>

@@ -8,6 +8,7 @@
     font-size: 1.2vw;
     position: fixed;
     z-index: 20;
+    transition: all 400ms ease-in;
 }
 
 .linkDiv {

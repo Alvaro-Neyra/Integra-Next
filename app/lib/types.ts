@@ -28,17 +28,39 @@ export default interface RootLayoutProps {
 }
 
 interface ImageUrls {
-    xsmall: string;
-    small: string;
-    medium: string;
-    large: string;
-    xlarge: string;
-    xxlarge: string;
-    original: string;
+    xsmall?: string;
+    small?: string;
+    medium?: string;
+    large?: string;
+    xlarge?: string;
+    xxlarge?: string;
+    original?: string;
 }
 
 export interface Announcement {
     title: string;
     text: string;
     img: string;
+}
+
+export interface Service {
+    id: number;
+    nombre: string;
+    descripcion: string;
+    icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+    image: {
+        jpg: ImageUrls;
+        webp: ImageUrls;
+    }
+    route: string;
+}
+
+export interface Project {
+    id: number;
+    name: string;
+    description: string;
+    img: {
+        jpg: ImageUrls;
+        webp: ImageUrls;
+    }
 }

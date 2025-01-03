@@ -1,9 +1,15 @@
-    const servicios = [
+import { Service } from "../lib/types";
+import ConstructionIcon from "../ui/components/ConstructionIcon";
+import ExpedienteIcon from "../ui/components/ExpedienteIcon";
+import InmobiliariaIcon from "../ui/components/InmobiliariaIcon";
+import ProjectsIcon from "../ui/components/ProjectsIcon";
+
+    const servicios : Service[] = [
         {
             "id": 1,
             "nombre": "CONSTRUCCIÓN",
             "descripcion": "Uno de nuestros servicios principales es la construcción de obras de infraestructura en general. Empleamos procesos eficientes, contamos con profesionales altamente calificados.",
-            "icon": "fa-solid fa-helmet-safety",
+            "icon": ConstructionIcon,
             "image": {
                 jpg: {
                     small: "images/servicios-images/jpg/construccion-servicios-320px.jpg",
@@ -24,7 +30,7 @@
             "id": 2,
             "nombre": "GERENCIA DE PROYECTOS",
             "descripcion": "La infraestructura representa gran porcentaje de la inversión para iniciar un negocio. INTEGRA diseña la mejor estrategia para que sus proyectos puedan alcanzar el máximo rendimiento.",
-            "icon": "fa-solid fa-user-check",
+            "icon": ProjectsIcon,
             "image": {
                 jpg: {
                     small: "images/servicios-images/jpg/gerencia-de-proyectos-servicios-320px.jpg",
@@ -47,7 +53,7 @@
             "id": 3,
             "nombre": "INMOBILIARIA",
             "descripcion": "INTEGRA desarrolla todo el ciclo de vida del proyecto, desde la evaluación de la compra del terreno hasta la entrega del producto al usuario final logrando la rentabilidad esperada.",
-            "icon": "fa-solid fa-home",
+            "icon": InmobiliariaIcon,
             "image": {
                 jpg: {
                     small: "images/servicios-images/jpg/inmobiliaria-servicios-320px.jpg",
@@ -69,7 +75,7 @@
             "id": 4,
             "nombre": "EXPEDIENTE TÉCNICO",
             "descripcion": "INTEGRA ofrece el servicio de desarrollo de expediente técnico en el cual implementa la metodología BIM logrando mejores resultados en todas las etapas del proyecto.",
-            "icon": "fa-solid fa-file-alt",
+            "icon": ExpedienteIcon,
             "image": {
                 jpg: {
                     small: "images/servicios-images/jpg/expediente-tecnico-servicios-320px.jpg",

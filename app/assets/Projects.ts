@@ -1,4 +1,6 @@
-const projectosData = [
+import { Project } from "../lib/types";
+
+const projectosData: Project[] = [
     {
         "id": 1,
         "name": "Institucionales",
@@ -117,6 +119,60 @@ const projectosData = [
             },
         },
         "description": "Proyectos para instituciones educativas, incluyendo escuelas, colegios y universidades."
+    }
+];
+
+export const staticProjects: Project[] = [
+    {
+        "id": 1,
+        "name": "Institucionales",
+        "img": {
+            jpg: {
+                small: "images/projectos-images/jpg/institucionales-proyectos-320px.jpg",
+                medium: "images/projectos-images/jpg/institucionales-proyectos-480px.jpg",
+                large: "images/projectos-images/jpg/institucionales-proyectos-500px.jpg"
+            },
+            webp: {
+                small: "images/projectos-images/webp/institucionales-proyectos-320px.webp",
+                medium: "images/projectos-images/webp/institucionales-proyectos-480px.webp",
+                large: "images/projectos-images/webp/institucionales-proyectos-500px.webp"
+            }
+        },
+        "description": "Proyectos dedicados a instituciones educativas, gubernamentales y organizaciones sin fines."
+    },
+    {
+        "id": 2,
+        "name": "Industriales",
+        "img": {
+            jpg: {
+                small: "images/projectos-images/jpg/industriales-proyectos-320px.jpg",
+                medium: "images/projectos-images/jpg/industriales-proyectos-480px.jpg",
+                large: "images/projectos-images/jpg/industriales-proyectos-500px.jpg"
+            },
+            webp: {
+                small: "images/projectos-images/webp/industriales-proyectos-320px.webp",
+                medium: "images/projectos-images/webp/industriales-proyectos-480px.webp",
+                large: "images/projectos-images/webp/industriales-proyectos-500px.webp"
+            }
+        },
+        "description": "Proyectos para instalaciones industriales y de manufactura."
+    },
+    {
+        "id": 3,
+        "name": "Retail",
+        "img": {
+            jpg: {
+                small: "images/projectos-images/jpg/retail-proyectos-320px.jpg",
+                medium: "images/projectos-images/jpg/retail-proyectos-480px.jpg",
+                large: "images/projectos-images/jpg/retail-proyectos-500px.jpg"
+            },
+            webp: {
+                small: "images/projectos-images/webp/retail-proyectos-320px.webp",
+                medium: "images/projectos-images/webp/retail-proyectos-480px.webp",
+                large: "images/projectos-images/webp/retail-proyectos-500px.webp"
+            }
+        },
+        "description": "Proyectos para tiendas y centros comerciales, incluyendo diseño de interiores y exteriores."
     }
 ];
 
