@@ -2,8 +2,10 @@
 
 import { useEffect } from 'react';
 
-export const useScrollToggle = ((ref: React.RefObject<HTMLElement | null>, active: boolean, activeClass: string) => {
+export const useScrollToggle = ((ref: React.RefObject<HTMLElement | null>, active: boolean, activeClass: string, enabled: boolean) => {
     useEffect(() => {
+        if (!enabled) return;
+        
         const handleScroll = () => {
             if (window.scrollY > 80) {
                 ref.current?.classList.add(activeClass);

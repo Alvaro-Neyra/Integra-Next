@@ -36,7 +36,9 @@ export default function DynamicNavBar() {
     const handleToggle = () => setIsExpanded(prev => !prev);
     const navBarRef = useRef<HTMLDivElement>(null);
 
-    useScrollToggle(navBarRef, active, styles.active);
+    const isScrollToggleEnabled = ["/", "/portfolio", "/servicios"].includes(pathname);
+
+    useScrollToggle(navBarRef, active, styles.active, isScrollToggleEnabled);
 
     const headerStyle: React.CSSProperties = { position: position as React.CSSProperties['position'] };
 

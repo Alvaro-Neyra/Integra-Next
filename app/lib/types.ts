@@ -1,6 +1,6 @@
 export interface NavBarProps {
-    active: boolean;
-    position: string;
+    readonly active: boolean;
+    readonly position: string;
 }
 
 export interface ButtonProps {
