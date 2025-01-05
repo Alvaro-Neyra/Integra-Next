@@ -13,13 +13,9 @@ export default async function RootLayout({
   const headersList = await headers();
   const navbarConfig = headersList.get("x-navbar-config");
 
-  let active = true;
-  let position = "static";
-  if (navbarConfig) {
-    const config = JSON.parse(navbarConfig);
-    active = config.active;
-    position = config.position;
-  }
+  const active = navbarConfig ? JSON.parse(navbarConfig).active : true;
+  const position = navbarConfig ? JSON.parse(navbarConfig).position : "static";
+
   return (
     <html lang="es">
       <body className={`${titiliumWeb.className}`}>

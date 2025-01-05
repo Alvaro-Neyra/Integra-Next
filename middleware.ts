@@ -12,7 +12,7 @@ export async function middleware(req: NextRequest) {
     if (pathname === "/" || pathname.startsWith("/portfolio") || pathname === "/servicios") {
         navBarConfig.active = false;
         navBarConfig.position = "fixed";
-    } else if (pathname.startsWith("/nosotros") || pathname.startsWith("/contacto")) {
+    } else if (pathname.startsWith("/nosotros") || pathname.startsWith("/contacto") || pathname.startsWith("/servicios")) {
         navBarConfig.active = true;
         navBarConfig.position = "static";
     }

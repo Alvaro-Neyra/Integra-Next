@@ -27,13 +27,16 @@ export default interface RootLayoutProps {
     children: React.ReactNode;
 }
 
-interface ImageUrls {
+export interface ImageUrls {
     xsmall?: string;
     small?: string;
     medium?: string;
     large?: string;
     xlarge?: string;
     xxlarge?: string;
+    giant?: string;
+    xgiant?: string;
+    xxgiant?: string;
     original?: string;
 }
 
@@ -94,4 +97,47 @@ export interface ImageAndTextProps {
 export interface Valores {
     heading: string;
     text: string;
+}
+
+export interface Video {
+    webm: {
+        "240p"?: string
+        "360p"?: string;
+        "480p"?: string;
+        "720p"?: string;
+        "1080p"?: string;
+        "original"?: string;
+    },
+    mp4: {
+        "240p"?: string
+        "360p"?: string;
+        "480p"?: string;
+        "720p"?: string;
+        "1080p"?: string;
+        "original"?: string;
+    },
+    thumbnail: string;
+}
+
+export interface HeroVideoProps {
+    video: Video;
+    heading: string;
+    paragraphs: string[];
+    linkText: string;
+    linkTo: string;
+}
+
+export interface ContactImage {
+    webp: ImageUrls;
+    jpg: ImageUrls;
+}
+
+export interface ProjectPhases {
+    title: string;
+    tasks: string[];
+}
+
+export interface Accordion {
+    heading: string;
+    paragraphs: string[];
 }

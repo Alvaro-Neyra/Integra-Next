@@ -1,0 +1,197 @@
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.contact-info h2 {
+    font-size: 1.6vw;
+    font-weight: 800;
+    color: var(--clr-neutral-900);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5vw;
+}
+
+.contact-info h2 span:first-child {
+    color: var(--mainColor);
+    font-size: 2vw;
+}
+
+.contact-info h2 span:last-child {
+    color: var(--mainColorLight);
+    font-size: 2.5vw;
+}
+
+.contact-information-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    width: 100%;
+}
+
+.contact-information-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.contact-information-container ul li {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.contact-information-container ul li div{
+    background-color: var(--darkBlueColor);
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    color: var(--clr-neutral-100);
+}
+
+.contact-information-container ul li div .contact-icon {
+    width: 1.5vw;
+    fill: var(--clr-neutral-100);
+}
+
+.contact-information-container ul li article {
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.contact-information-container ul li article a {
+    color: var(--clr-neutral-900);
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+
+.contact-information-container ul li article a:hover {
+    color: var(--mainColorLight);
+}
+
+.social-media-container ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.social-media-container ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
+.social-media-container ul li .contact-icon {
+    width: var(--darkBlueColor);
+    width: 3vw;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 500ms ease-in-out;
+}
+
+.social-media-container ul li:first-child .contact-icon {
+    fill: #4267B2;
+}
+
+.social-media-container ul li:nth-child(2) .contact-icon {
+    fill: #0077B5;
+}
+
+.social-media-container ul li:hover .contact-icon {
+    fill: var(--mainColor);
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact-info h2 span:first-child{
+        font-size: 5vw;
+    }
+
+    .contact-info h2 span:last-child {
+        font-size: 6vw;
+    }
+
+    .contact-information-container {
+        gap: 6vw;
+    }
+
+    .contact-information-container ul li {
+        gap: 3vw;
+    }
+
+    .contact-information-container ul li div {
+        width: 7vw;
+        height: 7vw;
+        font-size: 3vw;
+    }
+
+    .contact-information-container ul li div .contact-icon {
+        width: 3vw;
+    }
+
+    .contact-information-container ul li article {
+        font-size: 3vw;
+    }
+
+    .contact-information-container ul li article p{
+        font-size: 3vw;
+    }
+
+    .social-media-container ul li .contact-icon {
+        width: 7vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contact-info h2 span:first-child{
+        font-size: 5vw;
+    }
+
+    .contact-info h2 span:last-child {
+        font-size: 7vw;
+    }
+
+    .contact-information-container {
+        gap: 8vw;
+    }
+
+    .contact-information-container ul li {
+        gap: 3vw;
+    }
+
+    .contact-information-container ul li div {
+        width: 9vw;
+        height: 9vw;
+        font-size: 4vw;
+    }
+
+    .contact-information-container ul li div .contact-icon {
+        width: 5vw;
+    }
+
+    .contact-information-container ul li article {
+        font-size: 3vw;
+        font-weight: 500;
+    }
+    
+    .contact-information-container ul li article p{
+        font-size: 4vw;
+    }
+
+    .social-media-container ul li .contact-icon {
+        font-size: 8vw;
+    }
+}

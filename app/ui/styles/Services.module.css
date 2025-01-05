@@ -1,0 +1,95 @@
+.servicios-main {
+    display: flex;
+    padding: 2vw 5vw;
+    width: 100vw;
+    position: relative;
+}
+.servicios-content {
+    padding: 2vw;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5vw;
+}
+
+.heading-2 {
+    padding: 1.5vw 0;
+}
+
+.btn h2{
+    font-size: 1.5vw;
+}
+
+.accordions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    padding-top: 1.5vw;
+}
+
+.service-list {
+    list-style-type: none;
+}
+
+.service-list li {
+    background: url(/svg/check-mark.svg) no-repeat left center;
+    background-size: 1.5vw 1.5vw;
+    padding-left: 2.5vw;
+    line-height: 2vw;
+}
+
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+    .servicios-main {
+        flex-direction: column;
+        text-align: center;
+    }
+    .divService h2 {
+        font-size: 3vw;
+    }
+    .divService p {
+        font-size: 2vw;
+    }
+    .btn h2 {
+        font-size: 2vw;
+    }    
+    .service-list {
+        font-size: 2vw;
+        text-align: left;
+    }
+
+    .service-list li {
+        line-height: 3vw;
+    }
+    
+    .navbars {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: white;
+    }
+}
+
+@media only screen and (max-width: 700px) and (orientation: portrait){
+    .divService h2 {
+        font-size: 5vw;
+    }
+    .divService p {
+        font-size: 4vw;
+    }
+    .btn h2 {
+        font-size: 4vw;
+    }    
+    .service-list {
+        font-size: 4vw;
+    }
+    .service-list li {
+        line-height: 5vw;
+        background-size: 3vw 3vw;
+        padding-left: 4vw;
+    }
+}

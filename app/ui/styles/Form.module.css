@@ -1,0 +1,198 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .5vw;
+}
+
+.form-container form {
+    width: 100%;
+}
+
+.form-container h2 {
+    font-size: 2.5vw;
+    font-weight: 800;
+    color: var(--clr-neutral-900);
+    display: flex;
+    align-items: flex-start;
+    gap: .5vw;
+}
+
+.form-container h2 span:first-child {
+    color: var(--darkBlueColor);
+}
+
+.form-container form fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 100%;
+}
+
+.form-container .input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    border: 1px solid var(--clr-neutral-900);
+    border-radius: 0.5vw;
+    padding: 0 1vw;
+    width: 100%;
+}
+
+.form-container .input-container label {
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: var(--darkBlueColor);
+    width: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container .input-container svg {
+    width: 1.5vw;
+    fill: var(--darkBlueColor);
+}
+
+.form-container .input-container input, .form-container .input-container textarea {
+    padding: 1vw;
+    border: none;
+    border-radius: 0.5vw;
+    font-size: 1.3vw;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+}
+
+.form-container .input-container input::placeholder, .form-container .input-container textarea::placeholder {
+    font-size: 1.3vw;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.form-container .input-container textarea {
+    resize: none;
+    height: 10vw;
+}
+
+.error {
+    color: var(--redColor);
+    font-size: 1.3vw;
+    font-weight: 800;
+}
+
+.form-submitted {
+    font-size: 1.3vw;
+    font-weight: 800;
+    color: var(--darkBlueColor);
+}
+
+.form-container input[type="submit"] {
+    background-color: var(--darkBlueColor);
+    color: var(--clr-neutral-100);
+    border: none;
+    padding: 1vw 2vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    font-size: 1.5vw;
+    width: 20vw;
+}
+
+@media only screen and (max-width: 1000px) {
+    .form-container h2 {
+        font-size: 5vw;
+    }
+
+    .form-container form fieldset {
+        gap: 3vw;
+    }
+
+    .form-container .input-container label {
+        font-size: 3vw;
+        width: 5vw;
+    }
+
+    .form-container .input-container svg {
+        width: 3vw;
+    }
+
+    .form-container .input-container input, .form-container .input-container textarea {
+        padding: 2vw;
+        font-size: 2.5vw;
+    }
+
+    .form-container .input-container input::placeholder, .form-container .input-container textarea::placeholder {
+        font-size: 2.5vw;
+    }
+
+    .form-container .input-container textarea {
+        height: 20vw;
+    }
+
+    .form-container input[type="submit"] {
+        padding: 2vw 4vw;
+        font-size: 3vw;
+        width: 40vw;
+    }
+
+    .error {
+        font-size: 2.5vw;
+    }
+    .form-submitted {
+        font-size: 2.5vw;
+        font-weight: 800;
+        color: var(--darkBlueColor);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .form-container {
+        gap: 3vw;
+    }
+    .form-container h2 {
+        font-size: 5vw;
+    }
+
+    .form-container form fieldset {
+        gap: 4vw;
+    }
+
+    .form-container .input-container label {
+        font-size: 4vw;
+        width: 7vw;
+    }
+
+    .form-container .input-container svg {
+        width: 4vw;
+    }
+
+    .form-container .input-container input, .form-container .input-container textarea {
+        padding: 3vw;
+        font-size: 3vw;
+    }
+
+    .form-container .input-container input::placeholder, .form-container .input-container textarea::placeholder {
+        font-size: 3.5vw;
+    }
+
+    .form-container .input-container textarea {
+        height: 30vw;
+    }
+
+    .form-container input[type="submit"] {
+        padding: 3vw 6vw;
+        font-size: 4vw;
+    }
+
+    .error {
+        font-size: 3.5vw;
+    }
+    .form-submitted {
+        font-size: 3.5vw;
+        font-weight: 800;
+        color: var(--darkBlueColor);
+    }
+}
