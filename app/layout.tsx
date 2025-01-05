@@ -19,8 +19,10 @@ export default async function RootLayout({
   return (
     <html lang="es">
       <body className={`${titiliumWeb.className}`}>
-        <NavBar active={active} position={position} />
-        {children}
+        <section>
+          <NavBar active={active} position={position} />
+          {children}
+        </section>
         <Footer></Footer>
       </body>
     </html>

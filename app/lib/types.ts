@@ -141,3 +141,21 @@ export interface Accordion {
     heading: string;
     paragraphs: string[];
 }
+
+export interface ImageAndTextServiceProps {
+    heading: string;
+    text: string;
+    img: {
+        webp: ImageUrls;
+        jpg: ImageUrls;
+    }
+}
+
+export interface ArticleServiceProps {
+    heading: string;
+    img: {
+        webp: ImageUrls;
+        jpg: ImageUrls;
+    }
+    paragraphs: string[];
+}

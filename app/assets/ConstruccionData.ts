@@ -9,34 +9,34 @@ export const paragraphs: string[] = [
 
 export const construccionImages: ContactImage = {
     webp: {
-        xsmall: "images/servicios-images/webp/construccion-servicios-320px.webp",
-        small: "images/servicios-images/webp/construccion-servicios-480px.webp",
-        medium: "images/servicios-images/webp/construccion-servicios-600px.webp",
-        original: "images/servicios-images/webp/construccion-servicios-original.webp"
+        xsmall: "/images/servicios-images/webp/construccion-servicios-320px.webp",
+        small: "/images/servicios-images/webp/construccion-servicios-480px.webp",
+        medium: "/images/servicios-images/webp/construccion-servicios-600px.webp",
+        original: "/images/servicios-images/webp/construccion-servicios-original.webp"
     },
     jpg: {
-        xsmall: "images/servicios-images/jpg/construccion-servicios-320px.jpg",
-        small: "images/servicios-images/jpg/construccion-servicios-480px.jpg",
-        medium: "images/servicios-images/jpg/construccion-servicios-600px.jpg",
-        original: "images/servicios-images/jpg/construccion-servicios-original.jpg"
+        xsmall: "/images/servicios-images/jpg/construccion-servicios-320px.jpg",
+        small: "/images/servicios-images/jpg/construccion-servicios-480px.jpg",
+        medium: "/images/servicios-images/jpg/construccion-servicios-600px.jpg",
+        original: "/images/servicios-images/jpg/construccion-servicios-original.jpg"
     }
 }
 
 export const construccionArticleImages: ContactImage = {
     webp: {
-        xsmall: "images/article-images/construction-service-image/webp/construccion-articulo-320px.webp",
-        small: "images/article-images/construction-service-image/webp/construccion-articulo-480px.webp",
-        medium: "images/article-images/construction-service-image/webp/construccion-articulo-600px.webp",
-        large: "images/article-images/construction-service-image/webp/construccion-articulo-1024px.webp",
-        xlarge: "images/article-images/construction-service-image/webp/construccion-articulo-1200px.webp",
-        original: "images/article-images/construction-service-image/webp/construccion-articulo-original.webp"
+        xsmall: "/images/article-images/construction-service-image/webp/construccion-articulo-320px.webp",
+        small: "/images/article-images/construction-service-image/webp/construccion-articulo-480px.webp",
+        medium: "/images/article-images/construction-service-image/webp/construccion-articulo-600px.webp",
+        large: "/images/article-images/construction-service-image/webp/construccion-articulo-1024px.webp",
+        xlarge: "/images/article-images/construction-service-image/webp/construccion-articulo-1200px.webp",
+        original: "/images/article-images/construction-service-image/webp/construccion-articulo-original.webp"
     },
     jpg: {
-        xsmall: "images/article-images/construction-service-image/jpg/construccion-articulo-320px.jpg",
-        small: "images/article-images/construction-service-image/jpg/construccion-articulo-480px.jpg",
-        medium: "images/article-images/construction-service-image/jpg/construccion-articulo-600px.jpg",
-        large: "images/article-images/construction-service-image/jpg/construccion-articulo-1024px.jpg",
-        xlarge: "images/article-images/construction-service-image/jpg/construccion-articulo-1200px.jpg",
-        original: "images/article-images/construction-service-image/jpg/construccion-articulo-original.jpg"
+        xsmall: "/images/article-images/construction-service-image/jpg/construccion-articulo-320px.jpg",
+        small: "/images/article-images/construction-service-image/jpg/construccion-articulo-480px.jpg",
+        medium: "/images/article-images/construction-service-image/jpg/construccion-articulo-600px.jpg",
+        large: "/images/article-images/construction-service-image/jpg/construccion-articulo-1024px.jpg",
+        xlarge: "/images/article-images/construction-service-image/jpg/construccion-articulo-1200px.jpg",
+        original: "/images/article-images/construction-service-image/jpg/construccion-articulo-original.jpg"
     }
 };

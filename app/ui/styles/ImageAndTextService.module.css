@@ -1,0 +1,67 @@
+.section {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.section div {
+    width: 30vw;
+    padding: 3vw;
+    max-width: 100vw;
+}
+
+.section img {
+    width: 40vw;
+    max-width: 100vw;
+    height: 100%;
+}
+
+.section div h2 {
+    font-size: 2vw;
+    color: #012E40;
+    margin-bottom: 1rem;
+    border-left: 5px solid #012E40;
+    padding: 0.5vw;
+    width: 100%;
+}
+
+.section div p {
+    font-size: 1.3vw;
+    color: #012E40;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .section {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .section div {
+        width: 100%;
+    }
+
+    .section img {
+        width: 100%;
+    }
+
+    .section div h2 {
+        font-size: 3vw;
+        padding: 1vw;
+    }
+
+    .section div p {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .section div h2 {
+        font-size: 5vw;
+        padding: 1vw;
+    }
+
+    .section div p {
+        font-size: 4vw;
+    }
+}

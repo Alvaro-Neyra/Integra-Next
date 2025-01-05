@@ -9,7 +9,7 @@ export default function StaticFooter() {
             <div className={styles["footer-row-section"]}>
                 <section className={styles["details"]}>
                     <div className={styles["details-main"]}>
-                        <Link href="/"><img src="svg/integra-logo-blanco.svg" alt="integra-logo" className={styles["details-img"]} loading="lazy" /></Link>
+                        <Link href="/"><img src="/svg/integra-logo-blanco.svg" alt="integra-logo" className={styles["details-img"]} loading="lazy" /></Link>
                         <p className={styles["details-p"]}>Desarrollamos estrategias a la medida de sus proyectos.</p>
                     </div>
                     <ul className={styles["social-medias"]}>

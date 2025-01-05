@@ -114,6 +114,7 @@
     border: none;
     outline: none;
     font-size: 7vw;
+    cursor: pointer;
 }
 
 .liServicesContainer {
@@ -413,5 +414,16 @@
     }
     .navbar .contact-btn {
         font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+    .navbars {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: white;
     }
 }

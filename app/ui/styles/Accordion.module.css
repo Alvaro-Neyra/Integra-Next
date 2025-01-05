@@ -1,0 +1,74 @@
+.accordion {
+    border: 1px solid #ccc;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    padding: 1vw 2vw;
+    border-radius: 5px;
+}
+
+.accordion h2 {
+    font-size: 1.5vw;
+    padding: 1.5vw 0;
+}
+
+.accordion::before, .accordion::after {
+    position: absolute;
+    right: 5vw;
+    content: "";
+    width: 2vw;
+    height: 5px;
+    background-color: #012E40;
+    transition: transform 200ms ease-in-out;
+    top: 45%;
+    transform: translateY(-45%);
+    font-size: 1.5vw;
+}
+
+.accordion::before {
+    transform: rotate(0deg);
+}
+
+.accordion::after {
+    transform: rotate(90deg);
+}
+
+.accordion.rotate::before {
+    transform: rotate(-45deg);
+}
+
+.accordion.rotate::after {
+    transform: rotate(45deg);
+}
+
+.articleAccordion {
+    max-height: 0;
+    padding: 0 2vw;
+    overflow: hidden;
+}
+
+.articleAccordion.open {
+    max-height: 1000px;
+    transition: max-height 200ms ease-in-out;
+}
+
+.service-list {
+    list-style-type: none;
+}
+
+.service-list li {
+    background: url(/svg/check-mark.svg) no-repeat left center;
+    background-size: 1.5vw 1.5vw;
+    padding-left: 2.5vw;
+    line-height: 2vw;
+}
+
+@media only screen and (max-width: 700px) {
+    .accordion::before, .accordion::after {
+        width: 3vw;
+        height: .5vw;
+    }
+}

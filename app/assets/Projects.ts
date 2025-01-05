@@ -108,14 +108,14 @@ const projectosData: Project[] = [
         "name": "Educación",
         "img": {
             jpg: {
-                small: "images/projectos-images/jpg/educacion-proyectos-320px.jpg",
-                medium: "images/projectos-images/jpg/educacion-proyectos-480px.jpg",
-                large: "images/projectos-images/jpg/educacion-proyectos-500px.jpg"
+                small: "/images/projectos-images/jpg/educacion-proyectos-320px.jpg",
+                medium: "/images/projectos-images/jpg/educacion-proyectos-480px.jpg",
+                large: "/images/projectos-images/jpg/educacion-proyectos-500px.jpg"
             },
             webp: {
-                small: "images/projectos-images/webp/educacion-proyectos-320px.webp",
-                medium: "images/projectos-images/webp/educacion-proyectos-480px.webp",
-                large: "images/projectos-images/webp/educacion-proyectos-500px.webp"
+                small: "/images/projectos-images/webp/educacion-proyectos-320px.webp",
+                medium: "/images/projectos-images/webp/educacion-proyectos-480px.webp",
+                large: "/images/projectos-images/webp/educacion-proyectos-500px.webp"
             },
         },
         "description": "Proyectos para instituciones educativas, incluyendo escuelas, colegios y universidades."
@@ -128,14 +128,14 @@ export const staticProjects: Project[] = [
         "name": "Institucionales",
         "img": {
             jpg: {
-                small: "images/projectos-images/jpg/institucionales-proyectos-320px.jpg",
-                medium: "images/projectos-images/jpg/institucionales-proyectos-480px.jpg",
-                large: "images/projectos-images/jpg/institucionales-proyectos-500px.jpg"
+                small: "/images/projectos-images/jpg/institucionales-proyectos-320px.jpg",
+                medium: "/images/projectos-images/jpg/institucionales-proyectos-480px.jpg",
+                large: "/images/projectos-images/jpg/institucionales-proyectos-500px.jpg"
             },
             webp: {
-                small: "images/projectos-images/webp/institucionales-proyectos-320px.webp",
-                medium: "images/projectos-images/webp/institucionales-proyectos-480px.webp",
-                large: "images/projectos-images/webp/institucionales-proyectos-500px.webp"
+                small: "/images/projectos-images/webp/institucionales-proyectos-320px.webp",
+                medium: "/images/projectos-images/webp/institucionales-proyectos-480px.webp",
+                large: "/images/projectos-images/webp/institucionales-proyectos-500px.webp"
             }
         },
         "description": "Proyectos dedicados a instituciones educativas, gubernamentales y organizaciones sin fines."
@@ -145,14 +145,14 @@ export const staticProjects: Project[] = [
         "name": "Industriales",
         "img": {
             jpg: {
-                small: "images/projectos-images/jpg/industriales-proyectos-320px.jpg",
-                medium: "images/projectos-images/jpg/industriales-proyectos-480px.jpg",
-                large: "images/projectos-images/jpg/industriales-proyectos-500px.jpg"
+                small: "/images/projectos-images/jpg/industriales-proyectos-320px.jpg",
+                medium: "/images/projectos-images/jpg/industriales-proyectos-480px.jpg",
+                large: "/images/projectos-images/jpg/industriales-proyectos-500px.jpg"
             },
             webp: {
-                small: "images/projectos-images/webp/industriales-proyectos-320px.webp",
-                medium: "images/projectos-images/webp/industriales-proyectos-480px.webp",
-                large: "images/projectos-images/webp/industriales-proyectos-500px.webp"
+                small: "/images/projectos-images/webp/industriales-proyectos-320px.webp",
+                medium: "/images/projectos-images/webp/industriales-proyectos-480px.webp",
+                large: "/images/projectos-images/webp/industriales-proyectos-500px.webp"
             }
         },
         "description": "Proyectos para instalaciones industriales y de manufactura."
@@ -162,14 +162,14 @@ export const staticProjects: Project[] = [
         "name": "Retail",
         "img": {
             jpg: {
-                small: "images/projectos-images/jpg/retail-proyectos-320px.jpg",
-                medium: "images/projectos-images/jpg/retail-proyectos-480px.jpg",
-                large: "images/projectos-images/jpg/retail-proyectos-500px.jpg"
+                small: "/images/projectos-images/jpg/retail-proyectos-320px.jpg",
+                medium: "/images/projectos-images/jpg/retail-proyectos-480px.jpg",
+                large: "/images/projectos-images/jpg/retail-proyectos-500px.jpg"
             },
             webp: {
-                small: "images/projectos-images/webp/retail-proyectos-320px.webp",
-                medium: "images/projectos-images/webp/retail-proyectos-480px.webp",
-                large: "images/projectos-images/webp/retail-proyectos-500px.webp"
+                small: "/images/projectos-images/webp/retail-proyectos-320px.webp",
+                medium: "/images/projectos-images/webp/retail-proyectos-480px.webp",
+                large: "/images/projectos-images/webp/retail-proyectos-500px.webp"
             }
         },
         "description": "Proyectos para tiendas y centros comerciales, incluyendo diseño de interiores y exteriores."
