@@ -66,9 +66,30 @@
     line-height: 2vw;
 }
 
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+    .service-list {
+        font-size: 2vw;
+        text-align: left;
+    }
+    .service-list li {
+        line-height: 3vw;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     .accordion::before, .accordion::after {
         width: 3vw;
         height: .5vw;
+    }
+}
+
+@media only screen and (max-width: 700px) and (orientation: portrait) {
+    .accordion h2, .service-list {
+        font-size: 3.6vw;
+    }
+    .service-list li {
+        line-height: 5vw;
+        background-size: 3vw 3vw;
+        padding-left: 4vw;
     }
 }

@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "./ui/components/NavBar";
 import { headers } from "next/headers";
 import Footer from "./ui/components/Footer";
+import AbsoluteElements from "./ui/components/AbsoluteElements";
 
 
 export default async function RootLayout({
@@ -24,6 +25,7 @@ export default async function RootLayout({
           {children}
         </section>
         <Footer></Footer>
+        <AbsoluteElements />
       </body>
     </html>
   );
