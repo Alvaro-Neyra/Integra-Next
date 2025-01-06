@@ -20,7 +20,7 @@ export default function DynamicNavBar() {
     const pathname = usePathname();
 
     const [activeAsideNav, setActiveAsideNav] = useState(false);
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState(true);
     const [position, setPosition] = useState<NavBarProps['position']>('static');
 
     useEffect(() => {

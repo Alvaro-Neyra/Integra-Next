@@ -12,6 +12,24 @@ export default function GoToTop() {
             btn.current.style.visibility = 'hidden';
             btn.current.style.opacity = '0';
         }
+
+        const scrollFunction = () => {
+            if (btn.current) {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    btn.current.style.visibility = 'visible';
+                    btn.current.style.opacity = '1';
+                } else {
+                    btn.current.style.visibility = 'hidden';
+                    btn.current.style.opacity = '0';
+                }
+            }
+        };
+
+        window.onscroll = scrollFunction;
+
+        return() => {
+            window.onscroll = null;
+        }
     })
 
     const goTop = () => {
@@ -19,22 +37,6 @@ export default function GoToTop() {
             top: 0,
             behavior: 'smooth'
         });
-    };
-
-    const scrollFunction = () => {
-        if (btn.current) {
-            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                btn.current.style.visibility = 'visible';
-                btn.current.style.opacity = '1';
-            } else {
-                btn.current.style.visibility = 'hidden';
-                btn.current.style.opacity = '0';
-            }
-        }
-    };
-
-    window.onscroll = () => {
-        scrollFunction();
     };
 
     return (
