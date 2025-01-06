@@ -5,6 +5,7 @@ import { headers } from "next/headers";
 import Footer from "./ui/components/Footer";
 import AbsoluteElements from "./ui/components/AbsoluteElements";
 import Head from "next/head";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 export default async function RootLayout({
@@ -64,6 +65,7 @@ export default async function RootLayout({
         </section>
         <Footer></Footer>
         <AbsoluteElements />
+        <SpeedInsights />
       </body>
     </html>
   );
