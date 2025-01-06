@@ -205,3 +205,37 @@ body .heading-2 {
       transform: translate(calc(-50% - calc(var(--gap-scroller-inner) / 2)));
   }
 }
+
+.swiper-pagination-bullet {
+  background-color: var(--mainColorLightHover);
+  opacity: 1;
+  width: .5vw;
+  height: .5vw;
+}
+
+.card__content .swiper-pagination-bullet-active {
+  background-color: var(--mainColor);
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .card__content .swiper-pagination-bullet {
+      width: 1vw;
+      height: 1vw;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .card__content .swiper-pagination-bullet {
+      width: 1.2vw;
+      height: 1.2vw;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  .card__content .swiper-pagination-bullet {
+      width: .5vw;
+      height: .5vw;
+  }
+}

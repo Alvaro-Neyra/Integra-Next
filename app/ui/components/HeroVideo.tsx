@@ -24,7 +24,7 @@ export default function Hero({ video, heading, paragraphs, linkText, linkTo }: R
             </video>
             <div className={styles["hero-text"]}>
                 <h1 className={styles['hero-heading']}>{heading}</h1>
-                {paragraphs.map((paragraph, index) => { return <p key={paragraph}>{paragraph}</p> })}
+                {paragraphs.map((paragraph) => { return <p key={paragraph}>{paragraph}</p> })}
                 <Link href={linkTo} className={styles['hero-link']}>{linkText}</Link>
             </div>
         </section>

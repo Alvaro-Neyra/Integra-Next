@@ -27,6 +27,12 @@
     transition: all 0.3s ease;
 }
 
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - calc(var(--gap-scroller-inner) / 2)));
+    }
+}
+
 @media(hover) {
     .scroller__inner img:hover {
         transform: scale(1.1);

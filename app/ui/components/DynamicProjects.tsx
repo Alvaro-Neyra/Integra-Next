@@ -12,7 +12,7 @@ export default function DynamicProjects() {
         <section className={styles["projects_section"]}>
             <h2 className='heading-2'>Proyectos</h2>
             <section className={styles.container}>
-                <div className={styles["card__content"]}>
+                <div className={`card__content ${styles["card__content"]}`}>
                     <Swiper
                         className={styles["card_container"]}
                         modules={[Navigation, Pagination]}

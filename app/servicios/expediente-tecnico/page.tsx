@@ -4,9 +4,35 @@ import ImageAndTextService from "@/app/ui/components/ImageAndTextService";
 import { AccordionsExpediente } from "@/app/assets/AccordionArrays";
 import AccordionSet from "@/app/ui/components/AccordionSet";
 import { expedienteImages } from "@/app/assets/ExpedienteData";
+import Head from "next/head";
 
 export default function Page() {
     return (
+        <>
+        <Head>
+            <title>Integra Constructores | Servicios - Expediente Técnico</title>
+            <meta name="description" content="Descubra más sobre nuestros servicios de expediente técnico." />
+            <meta name="keywords" content="Integra Constructores, servicios, expediente técnico, proyectos, contacto, construcción, gerencia de proyectos, ingeniería civil" />
+
+            <meta property="og:url" content="" />
+            <meta property="og:title" content="Integra Constructores | Servicios - Expediente Técnico" />
+            <meta property="og:type" content="website" />
+            <meta property="og:description" content="Conoce más sobre nuestros servicios de expediente técnico." />
+            <meta property="og:image" content="/svg/integra-icon.svg" />
+
+            <meta property="twitter:card" content="summary_large_image" />
+            <meta property="twitter:domain" content="" />
+            <meta property="twitter:url" content="" />
+            <meta property="twitter:title" content="Integra Constructores | Servicios - Expediente Técnico" />
+            <meta property="twitter:description" content="Conoce más sobre nuestros servicios de expediente técnico." />
+            <meta property="twitter:image" content="/svg/integra-icon.svg" />
+
+            <link rel="alternate" href="" hrefLang="es" />
+            <link rel="alternate" href="" hrefLang="en" />
+
+            <link rel="canonical" href="" />
+
+        </Head>
         <section className={styles["servicios-main"]}>
             <NavBarAside></NavBarAside>
             <section>
@@ -19,5 +45,6 @@ export default function Page() {
                 </article>
             </section>
         </section>
+        </>
     );
 }

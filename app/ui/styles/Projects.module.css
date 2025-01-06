@@ -254,18 +254,6 @@
     right: 3vw;
 }
 
-:global(.swiper-pagination-bullet) {
-    background-color: var(--mainColorLightHover);
-    opacity: 1;
-    width: .5vw;
-    height: .5vw;
-}
-
-.card__content :global(.swiper-pagination-bullet-active) {
-    background-color: var(--mainColor);
-}
-
-
 @media screen and (max-width: 1019px) {
     .card__body {
         font-size: 1rem;
@@ -300,21 +288,11 @@
     .card__content .swiper-button-next {
         right: 6vw;
     }
-
-    :global(.card__content .swiper-pagination-bullet) {
-        width: 1vw;
-        height: 1vw;
-    }
 }
 
 @media screen and (max-width: 635px) {
     .card__body {
         font-size: 0.9rem;
-    }
-
-    .card__content :global(.swiper-pagination-bullet) {
-        width: 1.2vw;
-        height: 1.2vw;
     }
 }
 
@@ -463,10 +441,5 @@
     .card__content .swiper-button-prev::after,
     .card__content .swiper-button-next::after {
         font-size: 3vw;
-    }
-
-    .card__content :global(.swiper-pagination-bullet) {
-        width: .5vw;
-        height: .5vw;
     }
 }

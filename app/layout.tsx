@@ -23,7 +23,7 @@ export default async function RootLayout({
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width" />
-        <title>Integra Constructores - Pagina Oficial</title>
+        <title>Integra Constructores</title>
 
          {/* Meta tags importantes para SEO */}
         <meta name="robots" content="index, follow" />
@@ -33,17 +33,17 @@ export default async function RootLayout({
 
         {/* Open Graph Meta Tags */}
         <meta property="og:url" content="" />
-        <meta property="og:title" content="Integra Official Page" />
+        <meta property="og:title" content="Integra Constructores" />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="Visita la pagina Web Oficial de Integra" />
+        <meta property="og:description" content="Visita el sitio web oficial de Integra Constructores" />
         <meta property="og:image" content="/svg/integra-icon.svg" />
 
         {/* Twitter Open Graph Meta Tags */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="" />
         <meta property="twitter:url" content="" />
-        <meta property="twitter:title" content="Integra Official Page" />
-        <meta property="twitter:description" content="Visita la pagina Web Oficial de Integra" />
+        <meta property="twitter:title" content="Integra Constructores" />
+        <meta property="twitter:description" content="Visita el sitio web oficial de Integra Constructores" />
         <meta property="twitter:image" content="/svg/integra-icon.svg" />
 
          {/* Recursos alternativos */}
