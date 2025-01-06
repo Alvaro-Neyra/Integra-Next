@@ -18,10 +18,10 @@ export default function DynamicForm() {
 
     const onSubmit = (data: { name: string; email: string; phone: string; message: string }) => {
         const whatsappMessage = `Nuevo mensaje de contacto: ` +
-            `\nNombre:* ${data.name}%` +
-            `\nCorreo:* ${data.email}` +
-            `\nTeléfono:* ${data.phone}` +
-            `\nMensaje:* ${data.message}`;
+            `\nNombre: ${data.name}` +
+            `\nCorreo: ${data.email}` +
+            `\nTeléfono: ${data.phone}` +
+            `\nMensaje: ${data.message}`;
     
         const encodedMessage = encodeURIComponent(whatsappMessage);
 
